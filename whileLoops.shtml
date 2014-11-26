@@ -1,0 +1,110 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>template for text</title>
+
+<link href="styles.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<body>
+	<div id="container">
+	
+		<!-- unused for now
+		<div id="header">
+			<h1>  </h1>
+		</div><!--Header-->
+		
+		<div id="content">
+			<div class="sidebar primary">
+				<!--#include virtual="navbar.html" -->
+				<!-- includes the navigation bar page in doc -->
+				
+			</div><!--Sidebar-->
+			
+			<div id="main">
+				<h2>Hello World</h2>
+				<form oninput="textLoop()">
+				Words: 0<input type="range" name="points" id="a" value="0" min="0" max="5">5
+				</form>
+				
+				<form oninput="counter()">
+				Counter: 0<input type="range" name="points" id="b" value="0" min="0" max="36">35
+				</form>
+				<p id=helloOutput>  </p>
+				
+				<script>
+				function textLoop(){
+					var counter = 0;
+					var outputHW = "Hello World";
+					var spacer = "";
+					var numberLoops = 0;
+					printOutput = "";
+					
+					document.getElementById("helloOutput").innerHTML = "";
+					while(numberLoops < document.getElementById("a").value){
+						printOutput = printOutput + spacer + outputHW.substring(counter, counter + 1) + "</br>";
+						//document.write(printOutput);
+						document.getElementById("helloOutput").innerHTML = printOutput;
+						
+						spacer = spacer + '&nbsp' + '&nbsp' + '&nbsp';
+						counter++;
+						
+						
+						if (counter == outputHW.length){
+							counter = 0;
+							spacer = "";
+							numberLoops++;
+						}
+						
+					}
+				}
+				</script>
+				
+				<script>
+				function counter(){
+					var counter = 0;
+					var spacer = "";
+					printOutput = "";
+					
+					document.getElementById("helloOutput").innerHTML = "";
+					while(counter < document.getElementById("b").value){
+						printOutput = printOutput + spacer + counter + "</br>";
+						//document.write(printOutput);
+						document.getElementById("helloOutput").innerHTML = printOutput;
+						
+						spacer = spacer + '&nbsp' + '&nbsp' + '&nbsp';
+						counter++;
+						
+						/*
+						if (counter == outputHW.length){
+							counter = 0;
+							spacer = "";
+							numberLoops++;
+						}
+						*/
+					}
+				}
+				</script>
+				
+			</div><!--Main-->
+			
+			<!-- out for now, good for pictures
+			<div class="sidebar secondary">
+				<ul>
+					
+					[text here]
+						
+				</ul>
+			</div><!--Sidebar-->
+		</div><!--Content--> 
+		
+		
+		
+		<!-- unused for now
+		<div id="footer">
+			
+		</div><!--Footer-->
+	</div><!--Container-->
+
+
+</body>
+</html>

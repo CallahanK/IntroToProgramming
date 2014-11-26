@@ -1,0 +1,64 @@
+ body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, blockquote,
+ {
+	margin: 0; padding: 0; border: 0;
+}
+
+body {
+	/*temp unused for now*/
+	background: #7c7c7c url(images/body-bg.png);
+	font-family: Helvetica, Arial, Sans-Serif;
+}
+
+#container {
+	width: 960px; margin: 0 auto;
+	background: #fff;
+}
+
+	#header {
+		height: 100px;
+		background: url(images/header.jpg);
+	}
+		#header h1 { text-indent: 370px; }
+		
+	#content {
+		overflow: auto;
+		/*background: url(temp.jpg) repeat-y;*/
+	}
+		#content .sidebar {
+			width: 180px; float: left; 
+		}
+			#content .sidebar.primary { padding: 0 20px 20px 30px; }
+			#content .sidebar.secondary { padding: 0 30px 20px 20px; }
+			#content .sidebar li {
+				list-style: none;
+				font: italic 14px Georgia, Serif; color: #aaa; margin: 0 0 10px 0;
+			
+			}
+			#content .sidebar h2 {
+				font: italic 22px Georgia, Serif; color: #aaa; margin: 0 0 10px 0;
+			}
+			#content .sidebar h3 {
+				font: italic 14px Georgia, Serif; color: #aaa; margin: 0 0 10px 0;
+			}
+			
+		
+		#content #main {
+			width: 460px; float: left; padding: 0 20px 20px 20px;
+		}
+			#content #main h2 {
+				font: italic 30px Georgia, Serif; color: #aaa; margin: 0 0 10px 0;
+			}
+			#content #main h3 {
+				font: italic 18px Georgia, Serif; color: #aaa; margin: 0 0 10px 0;
+			}
+			#content #main p {
+				font-size: 14px; color: #666; line-height: 24px; margin: 0 0 15px 0;
+			}
+			#content #main ol {
+				font-size: 16px; color: #666; line-height: 24px; margin: 0 0 15px 35px;
+			}
+			
+	#footer {
+		height: 200px;
+		background: url(images/footer.png);
+	}

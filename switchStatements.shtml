@@ -1,0 +1,79 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>template for text</title>
+
+<link href="styles.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<body>
+	<div id="container">
+	
+		<!-- unused for now
+		<div id="header">
+			<h1>  </h1>
+		</div><!--Header-->
+		
+		<div id="content">
+			<div class="sidebar primary">
+				<!--#include virtual="navbar.html" -->
+				<!-- includes the navigation bar page in doc -->
+				
+			</div><!--Sidebar-->
+			
+			<div id="main">
+				<h2>Grade Tester</h2>
+				
+				<form oninput>
+				Grade:<input type="text" id="a" value="">
+				</form>
+				<button type="button" onclick="gradeTester()">Check</button>
+				
+				<script>
+				function gradeTester(){
+				var grade = parseInt(document.getElementById("a").value);
+				var gradeOutput;
+				switch (true){
+				case (grade>94):
+				  gradeOutput="A";
+				  break;
+				case (grade>85):
+				  gradeOutput="B";
+				  break;
+				case (grade>75):
+				  gradeOutput="C";
+				  break;
+				case (grade>65):
+				  gradeOutput="D";
+				  break;
+				default:
+				  gradeOutput="F";
+				  break;
+				}
+				
+				alert(gradeOutput);			
+				}
+				</script>
+				
+			</div><!--Main-->
+			
+			<!-- out for now, good for pictures
+			<div class="sidebar secondary">
+				<ul>
+					
+					[text here]
+						
+				</ul>
+			</div><!--Sidebar-->
+		</div><!--Content--> 
+		
+		
+		
+		<!-- unused for now
+		<div id="footer">
+			
+		</div><!--Footer-->
+	</div><!--Container-->
+
+
+</body>
+</html>

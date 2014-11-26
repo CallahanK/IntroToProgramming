@@ -1,0 +1,55 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>ASCII Language</title>
+
+<link href="styles.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<body>
+	<div id="container">
+	
+	
+		<div id="header">
+			<h1>  </h1>
+		</div><!--Header-->
+		
+		<div id="content">
+			<div class="sidebar primary">
+				<!--#include virtual="navbar.html" -->
+				<!-- includes the navigation bar page in doc -->
+				
+			</div><!--Sidebar-->
+			
+			<div id="main">
+				<h2>What is the language of the computer?</h2>
+				
+			<p>The computer is a digital machine that stores its data as binary values. For integers and real values this makes the conversion process relatively easy as base ten converts cleanly to binary and real values can be converted without too much difficulty as well. The issue comes in the form of characters are they have no natural correspondence to binary. One might first assume to simply make binary one, the character ‘a’ and ‘b,’ binary two and so on, but quickly one realises the need for special and control characters and the need for a standard. The American Standard Code for Information Interchange was developed by a committee of the American Standards Association, called the X3 committee and its later subcommittees. The design was based on earlier teleprinter encoding systems, included 26 alphabetic characters, 10 numerical digits, and from 11 to 25 special graphic symbols, meaning more than 64 codes would be required. Also needed were the control codes, such as the ones used in data transmission. The committee decided on a 7-bit system over an 8-bit system because by leaving an open bit, it enabled the 8th bit to be used as a parity bit for error checking. </p>
+			
+			<p> The ASCII Standard was formally accepted into practice in the U.S. in 1968 by President Lyndon B. Johnson, who mandated all computers purchased by the federal government would support ASCII. Many other international bodies would adopt similar standards that were extremely close to ASCII with small changes, such as the Canadian version supporting French characters or the United Kingdom’s version supporting a symbol for pound sterling. In the international community many languages had character sets far too large to fit into ASCII, leading to the rise of Unicode, which incorporated ASCII as its first 128 symbols. Thus, allowing it to be backward compatible with ASCII. </p>
+
+			</div><!--Main-->
+			
+			
+			
+			<div class="sidebar secondary">
+				<ul>
+					
+					<br><br><br><br>
+					<img src="images/ascii1.jpg" alt="Computer Support Specialist" width="180" height="55">
+					<br><br><br><br><br><br><br><br>
+					<img src="images/ascii2.jpg" alt="Computer Support Specialist" width="180" height="131">
+				</ul>
+			</div><!--Sidebar-->
+		</div><!--Content--> 
+		
+		
+		
+		
+		<div id="footer">
+			
+		</div><!--Footer-->
+	</div><!--Container-->
+
+
+</body>
+</html>

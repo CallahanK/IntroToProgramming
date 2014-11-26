@@ -1,0 +1,147 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Test</title>
+
+<link href="styles.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<body>
+	<div id="container">
+	
+		<!-- unused for now
+		<div id="header">
+			<h1>  </h1>
+		</div><!--Header-->
+		
+		<div id="content">
+			<div class="sidebar primary">
+				<!--#include virtual="navbar.html" -->
+				<!-- includes the navigation bar page in doc -->
+				
+			</div><!--Sidebar-->
+			
+			<div id="main">
+				<h2>Movement Test</h2>
+				<p>
+				Movement with arrow keys <br>
+				Adjust Size with + and -
+				</p>
+				<canvas id="myCanvas" width="500" height="500" style="border:1px solid #d3d3d3;">
+				Your browser does not support the HTML5 canvas tag.</canvas>
+				
+				<script>
+				var c=document.getElementById('myCanvas');
+				var ctx=c.getContext('2d');
+				ctx.translate(250,250);
+				
+				
+				var xPos = 0;
+				var yPos = 0;
+				
+				var xSize = 100;
+				var ySize = 100;
+				
+				document.onkeydown = function (e) {
+				if (e.which == 39){
+				moveXAxis(10);
+				}
+				
+				if (e.which == 37){
+				moveXAxis(-10);
+				}
+				
+				if (e.which == 38){
+				moveYAxis(-10);
+				}
+				
+				if (e.which == 40){
+				moveYAxis(10);
+				}
+				
+				if (e.which == 107){
+				scaleXSize(10);
+				scaleYSize(10);
+				}
+				
+				if (e.which == 109){
+				scaleXSize(-10);
+				scaleYSize(-10);
+				}
+				
+				};
+				</script>
+				
+				
+				<script>
+				function manageRect(){
+				ctx.clearRect(xPos,yPos,xSize,ySize);
+				ctx.fillRect(xPos,yPos,xSize,ySize);
+				
+				}
+				</script>
+				
+				<script>
+				function moveXAxis(tempMove){
+				xPos = xPos + tempMove;
+				manageRect();
+				}
+				</script>
+				
+				<script>
+				function moveYAxis(tempMove){
+				yPos = yPos + tempMove;
+				manageRect();
+				}
+				</script>
+				
+				<script>
+				function scaleXSize(tempSize){
+				xSize = xSize + tempSize;
+				//ySize = ySize + tempSize;
+				manageRect();
+				}
+				</script>
+				
+				<script>
+				function scaleYSize(tempSize){
+				//xSize = xSize + tempSize;
+				ySize = ySize + tempSize;
+				manageRect();
+				}
+				</script>
+				<!--
+				&nbsp; &nbsp; &nbsp;
+				<button type="button" onclick="moveYAxis(-5)">Up</button><br>
+				<button type="button" onclick="moveXAxis(-5)">Left</button>
+				<button type="button" onclick="moveXAxis(5)">Right</button>
+				
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				<button type="button" onclick="scaleSize(5)">Grow</button>
+				<button type="button" onclick="scaleSize(-5)">Shrink</button>
+				<br>
+				&nbsp; &nbsp; &nbsp;
+				<button type="button" onclick="moveYAxis(5)">Down</button>
+				-->
+			</div><!--Main-->
+			
+			<!-- out for now, good for pictures
+			<div class="sidebar secondary">
+				<ul>
+					
+					[text here]
+						
+				</ul>
+			</div><!--Sidebar-->
+		</div><!--Content--> 
+		
+		
+		
+		<!-- unused for now
+		<div id="footer">
+			
+		</div><!--Footer-->
+	</div><!--Container-->
+
+
+</body>
+</html>

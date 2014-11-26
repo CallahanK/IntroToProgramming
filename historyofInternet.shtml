@@ -1,0 +1,50 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>template for text</title>
+
+<link href="styles.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<body>
+	<div id="container">
+	
+	
+		<div id="header">
+			<h1>  </h1>
+		</div><!--Header-->
+		
+		<div id="content">
+			<div class="sidebar primary">
+				<ul>
+					Class Links: </br>
+					<a href="ItoPdirectory.html">Intro to Programming</a>
+				</ul>
+			</div><!--Sidebar-->
+			
+			<div id="main">
+				<h2>[title here]</h2>
+				<p>[text here]</p>
+
+			</div><!--Main-->
+			
+			<!-- out for now
+			<div class="sidebar secondary">
+				<ul>
+					
+					[text here]
+						
+				</ul>
+			</div><!--Sidebar-->
+		</div><!--Content--> 
+		
+		
+		
+		
+		<div id="footer">
+			
+		</div><!--Footer-->
+	</div><!--Container-->
+
+
+</body>
+</html>

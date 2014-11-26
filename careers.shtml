@@ -1,0 +1,68 @@
+<! doctype html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>CS IT Careers</title>
+
+<link href="styles.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<body>
+	<div id="container">
+	
+		<!-- unused for now
+		<div id="header">
+			<h1>  </h1>
+		</div><!--Header-->
+		
+		<div id="content">
+			<div class="sidebar primary">
+				<!--#include virtual="navbar.html" -->
+				
+				<!-- includes the navigation bar page in doc -->
+				
+			</div><!--Sidebar-->
+			
+			<div id="main">
+				<h2>CS IT Careers</h2>
+				<h3>Computer Programmer</h3>  
+				<p>A computer programmer creates software programs by using various coding languages. They work with software developers to plan and organize the program. They may be creating new software or instead updating or debugging an existing program. Often they work with code libraries to aid in the development of the code.</p>
+				<h3>Computer Hardware Engineer</h3>
+				<p>A computer hardware engineer designs, develops and tests various types of computer equipment, including circuit boards, routers, and chip sets. This process includes creating blueprints of the equipment, testing completed models, modifying the designs as needed, and updating computer equipment to work with new software. A hardware engineer will often work with software developers to determine the software a particular piece of hardware can run. They will also oversee the manufacturing process of hardware they have designed.</p>
+				<h3>Web Developer</h3>
+				<p>A web developer is responsible for website design and creation.  They handle the site's performance and capacity, appearance, and multimedia content. They meet with clients to determine the appearance and functionality of a website. Web development includes three different specializations. Web architects or programmers create the technical foundation of a website, while web designers concern themselves with the overall appearance of the site, and web-masters who maintain the website. </p>
+				<h3>Database Administrator</h3>
+				<p>A database administrator is responsible for installing, configuring, and maintaining an organization's databases. They make use computer software to store, organize, and protect data, which can include financial or shipping records. They work with management to determine the organization's data needs and upgrade its technical infrastructure. This gives the company’s data analysts access to the data, to improve the company. The administrator is also responsible for backup and restoring lost data.</p>
+				<h3>Computer Support Specialist</h3>  
+				<p>A computer support specialist offers help to customers and employees oforganizations troubleshoot problems that they are having with computer hardware or software. This can mean working in the IT department, to test, evaluate, maintain, and troubleshoot an organization's networks. It can also be a help-desk technicians, who focuses on helping customers with computer-related issues. They will often work with a client to a problem and walk them through steps to solve it. A computer support specialist can also work in repairing hardware or in training users in hardware or software operation. </p> 
+			</div><!--Main-->
+			
+			
+			<div class="sidebar secondary">
+				<ul>
+					<br><br><br><br>
+					<img src="images/computerprogrammer1.jpg" alt="Computer Programmer" width="180" height="135">
+					<br><br><br>
+					<img src="images/hardware1.jpg" alt="Computer Hardware Engineer" width="180" height="135">
+					<br><br><br><br><br><br>
+					<img src="images/underconstruction1.gif" alt="Web Developer" width="180" height="158">
+					<br><br><br><br><br>
+					<img src="images/database1.png" alt="Database Administrator" width="180" height="180">
+					<br><br><br><br><br>
+					<img src="images/itcrowd1.jpg" alt="Computer Support Specialist" width="180" height="144"> 
+						
+				</ul>
+			</div><!--Sidebar-->
+		</div><!--Content--> 
+		
+		
+		
+		
+		<div id="footer">
+			
+		</div><!--Footer-->
+	</div><!--Container-->
+
+
+</body>
+</html>

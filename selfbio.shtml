@@ -1,0 +1,63 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Self Bio</title>
+
+<link href="styles.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<body>
+	<div id="container">
+	
+	
+		<div id="header">
+			<h1>  </h1>
+		</div><!--Header-->
+		
+		<div id="content">
+			<div class="sidebar primary">
+				<!--#include virtual="navbar.html" -->
+				<!-- includes the navigation bar page in doc -->
+				
+				
+			</div><!--Sidebar-->
+			
+			<div id="main">
+				<h2>Self Bio</h2>
+				<p>I'm Kevin Callahan and a second year computer science major, with a concentration in game design and a minor in mathematics. I had a semester of VB, though to be honest I spent more time playing starcraft than coding. I spent the following two years learning Java. Over those two year, I coded solo projects of varying sizes, a few team built projects, and created a database to manage the math department’s textbooks. I also have limited knowledge in the creation of GUIs. </p>
+	
+				<p>I am a self-described nerd and have embraced that title. I am an avid fan of books, movies, tv, video games, board games, really anything that I can really get into. My all time favorite book and author combination is Douglas Adams and Hitchhiker's Guide to the Galaxy. When it comes to movies, I know it is a cop out, but I can never pick a favorite. Community, Firefly, and Sherlock are only a few of my top tv shows. I trained in combination style of martial arts to the rank of brown belt for over six years. The style was a combination of jiu jitsu, kempo, and shaolin kung fu. </p>
+				
+				<img src="images/karate1.jpg" style="padding:30px;" alt="karate" width="180" height="120">
+				
+				<img src="images/firefly1.png" style="padding:10px;" alt="firefly" width="180" height="156">
+				
+			</div><!--Main-->
+			
+			
+			
+			<div class="sidebar secondary">
+				<ul>
+					
+					<br>
+					<img src="images/java1.jpeg" alt="java" width="180" height="110">
+					<br><br><br>
+					<img src="images/community1.png" alt="community" width="180" height="101">
+					<br><br><br>
+					<img src="images/dontpanic2.jpg" alt="Computer Support Specialist" width="180" height="101">
+					<br><br><br>
+					<img src="images/firefly2.jpg" alt="Computer Support Specialist" width="180" height="114">
+				</ul>
+			</div><!--Sidebar-->
+		</div><!--Content--> 
+		
+		
+		
+		
+		<div id="footer">
+			
+		</div><!--Footer-->
+	</div><!--Container-->
+
+
+</body>
+</html>

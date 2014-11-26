@@ -1,0 +1,176 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Javascript Examples</title>
+
+<link href="styles.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<body>
+	<div id="container">
+	
+		<!-- unused for now
+		<div id="header">
+			<h1>  </h1>
+		</div><!--Header-->
+		
+		<div id="content">
+			<div class="sidebar primary">
+				<!--#include virtual="navbar.html" -->
+				<!-- includes the navigation bar page in doc -->
+				
+			</div><!--Sidebar-->
+			
+			<div id="main">
+				<h2>Temperature Converter</h2>
+				
+				<form oninput="tempSelect()">
+				Temperature:<input type="number" id="a" value="32"><br>
+				<input type="radio" name="tempType" id="temp1" value="cel" checked="checked">To Celsius
+				<input type="radio" name="tempType" id="temp2" value="faren">To Fahrenheit
+				</form>
+				<p id=outputTemp>  </p>
+				<script>
+				function tempSelect(){
+				if (document.getElementById('temp1').checked) {
+				toCelsius();
+				}
+				if (document.getElementById('temp2').checked) {
+				toFahrenheit();
+				}
+				}
+				</script>
+				
+				<script>
+				function toCelsius(){
+				var temp = parseInt(document.getElementById("a").value);
+				
+				var convertedTemp = (temp - 32) * (5/9) ;
+				document.getElementById("outputTemp").innerHTML = "Converted Temperature: " + convertedTemp + '&#8451';
+				}
+				</script>
+				
+				<script>
+				function toFahrenheit(){
+				var temp = parseInt(document.getElementById("a").value);
+				
+				var convertedTemp = temp * (9/5) + 32 ;
+				document.getElementById("outputTemp").innerHTML = "Converted Temperature: " + convertedTemp  + '&#8457';
+				
+				}
+				</script>
+				
+				
+				<h2>Volume Calculator</h2>
+				
+				<form oninput="volumeCalculator()">
+				Radius:<input type="number" id="b" value="3">
+				</form>
+				<p id=outputVolume>  </p>
+				
+				<script>
+				function volumeCalculator(){
+				var tempRadius = parseInt(document.getElementById("b").value);
+				
+				var volumeSphere = (4/3) * Math.PI * Math.pow(tempRadius,3);
+				
+				document.getElementById("outputVolume").innerHTML = "Sphere Volume: " + volumeSphere;
+				
+				}
+				</script>
+				
+				<h2>Mean Calculator</h2>
+				<p id=meanOutput>  </p>
+				<button type="button" onclick="meanOutput()">Calculate</button>
+				
+				
+				<script>
+				function meanOutput(){
+				var meanValues = new Array();
+				var meanTotal = 0;
+				var showCalculation = "";
+				var i = 0;
+				/* old fixed mean calculation				
+				for (var i = 0; i < 10; i++){
+				meanValues[i] = Math.pow(2,i + 1);
+				*/
+				while (true){
+				meanValues[i] = prompt("Enter number " + (i+1) + " to be calculated");
+				while (meanValues[i] == ""){
+				meanValues[i] = prompt("Please enter a number");
+				}
+				if (meanValues[i] == null){
+				break;
+				}
+				showCalculation = showCalculation + meanValues[i] + "+";
+				meanTotal = meanTotal + parseInt(meanValues[i]);
+				i++;
+				}
+				
+				var meanQuantity=0;
+				meanQuantity = meanValues.length - 1;
+				
+				var meanCalculated = meanTotal / meanQuantity; 
+				showCalculation = showCalculation.substring(0,showCalculation.length - 1);
+				document.getElementById("meanOutput").innerHTML = showCalculation + " / " + meanQuantity + " = " + meanCalculated;
+				
+				}
+				</script>
+				
+				
+				<h2>String Concatenator</h2>
+				
+				
+				<form onchange="stringConcatenator()">
+				<input type="checkbox" name="stringConcat" id="string1" value="The quick brown ">The quick brown 
+				<input type="checkbox" name="stringConcat" id="string2" value="fox jumps ">fox jumps 
+				<input type="checkbox" name="stringConcat" id="string3" value="over the ">over the 
+				<input type="checkbox" name="stringConcat" id="string4" value="lazy dog. ">lazy dog. 
+				</form>
+				
+				<p id=outputString>  </p>
+				
+				<script>
+				function stringConcatenator(){
+				var tempString = "";
+				if (document.getElementById("string1").checked){
+				tempString = tempString + document.getElementById("string1").value;
+				}
+				if (document.getElementById("string2").checked){
+				tempString = tempString + document.getElementById("string2").value;
+				}
+				if (document.getElementById("string3").checked){
+				tempString = tempString + document.getElementById("string3").value;
+				}
+				if (document.getElementById("string4").checked){
+				tempString = tempString + document.getElementById("string4").value;
+				}
+				
+				
+				document.getElementById("outputString").innerHTML = tempString;
+				
+				}
+				</script>
+				
+			</div><!--Main-->
+			
+			<!-- out for now, good for pictures
+			<div class="sidebar secondary">
+				<ul>
+					
+					[text here]
+						
+				</ul>
+			</div><!--Sidebar-->
+		</div><!--Content--> 
+		
+		
+		
+		<!-- unused for now
+		<div id="footer">
+			
+		</div><!--Footer-->
+	</div><!--Container-->
+
+
+</body>
+</html>

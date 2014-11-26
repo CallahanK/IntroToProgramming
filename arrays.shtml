@@ -1,0 +1,75 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>template for text</title>
+
+<link href="styles.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<body>
+	<div id="container">
+	
+		<!-- unused for now
+		<div id="header">
+			<h1>  </h1>
+		</div><!--Header-->
+		
+		<div id="content">
+			<div class="sidebar primary">
+				<!--#include virtual="navbar.html" -->
+				<!-- includes the navigation bar page in doc -->
+				
+			</div><!--Sidebar-->
+			
+			<div id="main">
+				<h2>Arrays</h2>
+				
+				<script>
+				var temperatureTotal = 10;
+				var temperatureArray = new Array();
+				
+				for(var i = 0;i<=temperatureTotal;i++){
+					temperatureArray[i] = Math.floor((Math.random()*100)+0);
+				}
+				</script>
+				
+				<script>
+				var stockTotal = 10;
+				var stockArray = new Array();
+				
+				for(var i = 0;i<=stockTotal;i++){
+					stockArray[i] = Math.floor((Math.random()*1000)+1);
+				}
+				</script>
+				
+				<script>
+				var carArray=new Array("Saab","Volvo","BMW","Lexus","Toyota","Acura","Audi","Mazada","Infiniti","Honda");		
+				
+				</script>
+				
+				<script>
+				var carArray=new Array("The" "quick" "brown" "fox" "jumps" "over" "the" "lazy" "dog.");	
+				
+				</script>
+			</div><!--Main-->
+			
+			<!-- out for now, good for pictures
+			<div class="sidebar secondary">
+				<ul>
+					
+					[text here]
+						
+				</ul>
+			</div><!--Sidebar-->
+		</div><!--Content--> 
+		
+		
+		
+		<!-- unused for now
+		<div id="footer">
+			
+		</div><!--Footer-->
+	</div><!--Container-->
+
+
+</body>
+</html>

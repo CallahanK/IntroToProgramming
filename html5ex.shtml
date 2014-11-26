@@ -1,0 +1,134 @@
+<! doctype html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Lab 4 - HTML 5</title>
+
+<link href="styles.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<body>
+	<div id="container">
+	
+		<!-- unused for now
+		<div id="header">
+			<h1>  </h1>
+		</div><!--Header-->
+		
+		<div id="content">
+			<div class="sidebar primary">
+				<!--#include virtual="navbar.html" -->
+				<!-- includes the navigation bar page in doc -->
+				
+			</div><!--Sidebar-->
+			
+			<div id="main">
+				<h2>Audio Example</h2>
+				<p>
+				
+				<audio controls>
+				<source src="media/01 Hey You.mp3" type="audio/mpeg">
+				Your browser does not support the audio tag.
+				</audio>
+				<h2>Video Example</h2>
+				<video width="320" height="240" controls poster="/images/loading1.gif" loop >
+				<source src="media/tempMovie.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+				</video>
+				
+								
+				<form oninput="spiral()">
+				Rate of increase:<input type="number" id="a" value="0"><br>
+				Amount of increase:<input type="number" id="b" value="1">
+				</form>
+				
+				
+				<canvas id="myCanvas" width="500" height="500" style="border:1px solid #d3d3d3;">
+				Your browser does not support the HTML5 canvas tag.</canvas>
+
+				
+				<script>
+				function spiral(){
+				var c=document.getElementById('myCanvas');
+				var ctx=c.getContext('2d');
+				var jRate = parseInt(document.getElementById("a").value);
+				var kAmount = parseInt(document.getElementById("b").value);
+				ctx.clearRect(0,0,500,500);
+				
+				
+				var x;
+				var y;
+				var i;
+				var j;
+				var k;
+				
+				k=kAmount;
+				j=1;
+				i=1;
+				x=250;
+				y=250;
+				ctx.beginPath();
+				ctx.moveTo(250,250);
+				while (i<60){
+	
+					
+					
+					
+					x=x+(j*i*k);
+					i++; 
+					j = j+jRate;
+					ctx.lineTo(x,y);
+					y=y+(j*i*k);
+					i++; 
+					j = j+jRate;					
+					ctx.lineTo(x,y);
+					x=x-(j*i*k);
+					i++; 
+					j = j+jRate;					
+					ctx.lineTo(x,y);
+					y=y-(j*i*k);
+					i++; 
+					j = j+jRate;					
+					ctx.lineTo(x,y);
+					
+					
+					ctx.strokeStyle="red";
+					ctx.stroke();
+					
+					
+
+					
+					
+					
+					
+				}
+
+				}
+				</script>
+				
+				
+				
+				</p>
+			</div><!--Main-->
+			
+			<!-- out for now, good for pictures
+			<div class="sidebar secondary">
+				<ul>
+					
+					[text here]
+						
+				</ul>
+			</div><!--Sidebar-->
+		</div><!--Content--> 
+		
+		
+		
+		<!-- unused for now
+		<div id="footer">
+			
+		</div><!--Footer-->
+	</div><!--Container-->
+
+
+</body>
+</html>

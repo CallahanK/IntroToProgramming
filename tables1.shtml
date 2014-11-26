@@ -1,0 +1,100 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Lab 1 - Tables</title>
+
+<link href="styles.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<body>
+	<div id="container">
+	
+	
+		<div id="header">
+			<h1>  </h1>
+		</div><!--Header-->
+		
+		<div id="content">
+			<div class="sidebar primary">
+				<!--#include virtual="navbar.html" -->
+				<!-- includes the navigation bar page in doc -->
+				
+			</div><!--Sidebar-->
+			
+			<div id="main">
+				<h2>Data Mine Table</h2>
+				<p>
+					<table border="1">
+					<tr>
+					<td>Unique Identifier</td>
+					<td>Customer Name</td>
+					<td>Telephone Number</td>
+					<td>Address</td>
+					<td>Item Purchase SKU</td>
+					<td>Date Purchased</td>
+					</tr>
+					<tr>
+					<td>456</td>
+					<td>A. Robertson</td>
+					<td>212-555-2222</td>
+					<td>6th St Pierre, NY 20100</td>
+					<td>1181-3</td>
+					<td>11-11-02</td>
+					</tr>
+					<tr>
+					<td>457</td>
+					<td>B. Meyers</td>
+					<td>202-555-1212</td>
+					<td>77th Ave, Uptown, CA 90211</td>
+					<td>0201-9</td>
+					<td>12-05-03</td>
+					</tr>
+					<tr>
+					<td>458</td>
+					<td>A. Robertson</td>
+					<td>212-555-2222</td>
+					<td>6th St Pierre, NY 20100</td>
+					<td>5512-8</td>
+					<td>06-22-02</td>
+					</tr>
+					<tr>
+					<td>459</td>
+					<td>G. Sanchez</td>
+					<td>604-555-1111</td>
+					<td>41st Gore Ave, TN 30101</td>
+					<td>4122-7</td>
+					<td>01-06-99</td>
+					</tr>
+					<tr>
+					<td>460</td>
+					<td>L Downing</td>
+					<td>708-555-3333</td>
+					<td>22nd Dec, Ca 95101</td>
+					<td>0011-7</td>
+					<td>07-05-03</td>
+					</tr>
+					</table>
+				</p>
+
+			</div><!--Main-->
+			
+			<!-- out for now
+			<div class="sidebar secondary">
+				<ul>
+					
+					[text here]
+						
+				</ul>
+			</div><!--Sidebar-->
+		</div><!--Content--> 
+		
+		
+		
+		
+		<div id="footer">
+			
+		</div><!--Footer-->
+	</div><!--Container-->
+
+
+</body>
+</html>
